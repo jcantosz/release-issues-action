@@ -1,0 +1,31 @@
+name: Update Release Description to contain issue links
+description: A GitHub Action to update the a generated release description with issues that are associated to the pull requests.
+inputs:
+  github_token:
+    description: "GitHub token for authentication"
+    required: true
+  github_app_id:
+    description: "GitHub App ID for authentication (optional)"
+    required: false
+  github_private_key:
+    description: "GitHub Private Key for authentication (optional)"
+    required: false
+  github_installation_id:
+    description: "GitHub Installation ID for authentication (optional)"
+    required: false
+  github_repository:
+    description: "GitHub repository in the format owner/repo"
+    required: true
+  github_release_tag:
+    description: "Git tag for the release"
+    required: true
+  github_api_url:
+    description: "The base URL for GitHub's API"
+    required: false
+    default: "https://api.github.com"
+runs:
+  using: "node20"
+  main: "dist/index.js"
+branding:
+  icon: "link"
+  color: "blue"
