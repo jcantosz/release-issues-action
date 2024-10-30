@@ -11,6 +11,8 @@ This GitHub Action updates the release description with issues linked to pull re
 
 ## Usage
 
+**Note**: Using the GitHub Actions token is generally sufficient to link issue to the pull request. It will handle linking issues from the current repositories as well as issues from other public repositories. If you want to link issues from another private or internal repository, you will need to provide a PAT or GitHub App for authentication
+
 ### Inputs
 
 - `github-token`: GitHub token for authentication (optional).
