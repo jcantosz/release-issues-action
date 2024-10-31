@@ -60,6 +60,7 @@ Setup:
 
 1. `npm install`
 1. Copy `local.env.tmpl` to `local.env` and update the values
+1. Create the file to simulate GitHub Step Summary `touch output.file`
 1. `. ./local.env && node index.`
 
 Packaging:

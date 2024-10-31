@@ -34006,6 +34006,7 @@ async function main() {
     core.info("Release description updated successfully.");
     core.info(`See updated release here: ${release.url}`);
     core.summary.addRaw(`Updated release [${releaseTag}](${release.url}) with issue links.`);
+    core.summary.write();
   } catch (error) {
     core.setFailed(`Error updating release description: ${error.message}`);
   }
